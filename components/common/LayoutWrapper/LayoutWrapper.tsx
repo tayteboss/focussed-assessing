@@ -8,13 +8,17 @@ type Props = {
 
 const Wrapper = styled.div`
 	margin: 0 auto;
-	max-width: ${(props) => props.theme.layout.innerWrapper};
-	padding-left: ${pxToRem(16)};
-	padding-right: ${pxToRem(16)};
+	padding-left: ${pxToRem(24)};
+	padding-right: ${pxToRem(24)};
+
+	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
+		padding-left: ${pxToRem(16)};
+		padding-right: ${pxToRem(16)};
+	}
 `;
 
 const LayoutWrapper = (props: Props) => (
-	<Wrapper className="inner-wrapper">{props.children}</Wrapper>
+	<Wrapper className="layout-wrapper">{props.children}</Wrapper>
 );
 
 export default LayoutWrapper;

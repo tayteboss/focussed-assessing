@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { theme } from './theme';
+import pxToRem from '../utils/pxToRem';
 
 export const GlobalStyles = createGlobalStyle`
 	:root {
@@ -18,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
 		--transition-speed-slow: ${theme.transitionSpeed.slow};
 		--transition-speed-extra-slow: ${theme.transitionSpeed.extraSlow};
 		--transition-ease: cubic-bezier(0.65, 0, 0.35, 1);
+		--border-radius: ${pxToRem(20)};
 	}
 
 	* {
@@ -33,6 +35,7 @@ export const GlobalStyles = createGlobalStyle`
 		border-radius: 0;
 		box-shadow: none;
 		font-weight: 100;
+		font-family: sans-serif;
 	}
 
 	::selection {
@@ -92,10 +95,13 @@ export const GlobalStyles = createGlobalStyle`
 	.type-h1 {
 		font-size: ${theme.size.h1};
 		line-height: 6rem;
+		letter-spacing: -1.92px;
 
 		@media ${theme.mediaBreakpoints.tabletPortrait}
 		{
 			font-size: ${theme.sizeTablet.h1};
+			line-height: 2.25rem;
+			letter-spacing: -0.6px;
 		}
 
 		@media ${theme.mediaBreakpoints.mobile}
@@ -110,11 +116,13 @@ export const GlobalStyles = createGlobalStyle`
 	.type-h3 {
 		font-size: ${theme.size.h2};
 		line-height: 3rem;
+		letter-spacing: -0.84px;
 
 		@media ${theme.mediaBreakpoints.tabletPortrait}
 		{
 			font-size: ${theme.sizeTablet.h2};
 			line-height: 2.25rem;
+			letter-spacing: -0.6px;
 		}
 
 		@media ${theme.mediaBreakpoints.mobile}
@@ -132,6 +140,7 @@ export const GlobalStyles = createGlobalStyle`
 		{
 			font-size: ${theme.sizeTablet.h4};
 			line-height: 1.375rem;
+			letter-spacing: -0.6px;
 		}
 
 		@media ${theme.mediaBreakpoints.mobile}
@@ -164,11 +173,25 @@ export const GlobalStyles = createGlobalStyle`
 	{
 		opacity: 0;
 
-		transition: opacity 300ms ease;
+		transition: all var(--transition-speed-default) var(--transition-ease);
 
 		&--in-view
 		{
 			opacity: 1;
+		}
+	}
+
+	.view-element-blur-in
+	{
+		opacity: 0;
+		filter: blur(6px);
+
+		transition: all var(--transition-speed-default) var(--transition-ease);
+
+		&--in-view
+		{
+			opacity: 1;
+			filter: blur(0px);
 		}
 	}
 

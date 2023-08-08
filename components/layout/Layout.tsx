@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
+import Menu from './Menu';
 
 const Main = styled.main``;
 
@@ -14,9 +15,17 @@ const Layout = (props: Props) => {
 		children
 	} = props;
 
+	const [MenuIsActive, setMenuIsActive] = useState(false);
+
 	return (
 		<>
-			<Header />
+			<Header
+				setMenuIsActive={setMenuIsActive}
+			/>
+			<Menu
+				setMenuIsActive={setMenuIsActive}
+				menuIsActive={MenuIsActive}
+			/>
 			<Main>{children}</Main>
 			<Footer />
 		</>
