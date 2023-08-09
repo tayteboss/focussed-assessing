@@ -1,5 +1,13 @@
-/* @font-face {
-	font-family: 'HaasGrot';
-	src: url('/fonts/HaasGrotDisp-55Roman.woff2') format('woff2'), url('/fonts/HaasGrotDisp-55Roman.woff') format('woff'), url('/fonts/HaasGrotDisp-55Roman.ttf') format('truetype'), url('/fonts/HaasGrotDisp-55Roman.otf') format('opentype');
+@font-face {
+	font-family: 'gordita-regular';
+	src: url('/fonts/gordita-regular.otf') format('opentype');
 	font-display: swap;
-} */
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'gordita-bold';
+	src: url('/fonts/gordita-bold.otf') format('opentype');
+	font-display: swap;
+	font-weight: 900;
+}

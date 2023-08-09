@@ -9,7 +9,7 @@ export const theme = {
 		primaryGreen: '#24B58F',
 	},
 	fonts: {
-		regular: 'gordita-reg',
+		regular: 'gordita-regular',
 		bold: 'gordita-bold',
 	},
 	size: {

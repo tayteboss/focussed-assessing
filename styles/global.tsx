@@ -35,7 +35,6 @@ export const GlobalStyles = createGlobalStyle`
 		border-radius: 0;
 		box-shadow: none;
 		font-weight: 100;
-		font-family: sans-serif;
 	}
 
 	::selection {
