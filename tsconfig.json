@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "next-sitemap.js", "pages/_document.js"  ],
+, "next-sitemap.js", "pages/_document.js", "components/layout/Pagebuilder/Pagebuilder.js"  ],
   "exclude": [
     "node_modules"
   ]

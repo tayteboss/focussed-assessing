@@ -1,0 +1,189 @@
+{
+	"seoTitle": "Focussed Assessing | Home",
+	"pageBuilder": [
+		{
+			"id": "scroll-hero-video",
+			"primaryTitle": "Lorem ipsum",
+			"secondaryTitle": "Dolor sit amet"
+		},
+		{
+			"id": "content",
+			"primaryTitle": "Lorem ipsum",
+			"secondaryTitle": "Dolor sit amet",
+			"icon": "clipboard-green.svg",
+			"content": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.",
+			"theme": "dark-green"
+		},
+		{
+			"id": "content",
+			"primaryTitle": "Lorem ipsum",
+			"secondaryTitle": "Dolor sit amet",
+			"icon": "clipboard-white.svg",
+			"content": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.",
+			"theme": "light-green"
+		},
+		{
+			"id": "content",
+			"primaryTitle": "Lorem ipsum",
+			"secondaryTitle": "Dolor sit amet",
+			"icon": "clipboard-green.svg",
+			"content": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.",
+			"theme": "white"
+		},
+		{
+			"id": "intersection-content",
+			"primaryTitle": "Lorem ipsum dolor sit amet,",
+			"secondaryTitle": "consectetuer adipiscing elit.",
+			"topContentRichText": "<p>Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.<p>",
+			"bottomContentHeading": "Morbi in sem quis dui placerat",
+			"bottomContentRichText": "<p>Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.</p>",
+			"theme": "dark"
+		},
+		{
+			"id": "intersection-content",
+			"primaryTitle": "Why?",
+			"bottomContentHeading": "Morbi in sem quis dui placerat",
+			"bottomContentRichText": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere.</p><p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor maurissit amet orci. Aenean dignissim.</p><p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p><p>Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.</p>",
+			"theme": "dark"
+		},
+		{
+			"id": "step-cards",
+			"cards": [
+				{
+					"title": "Step One",
+					"content": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus."
+				},
+				{
+					"title": "Step Two",
+					"content": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus."
+				},
+				{
+					"title": "Step Three",
+					"content": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus."
+				}
+			]
+		},
+		{
+			"id": "numbers-carousel",
+			"theme": "dark",
+			"cards": [
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				},
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				},
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				},
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				}
+			]
+		},
+		{
+			"id": "numbers-carousel",
+			"theme": "light",
+			"cards": [
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				},
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				},
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				},
+				{
+					"title": "Average Claim",
+					"amount": "5000",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan.",
+					"icon": "speedometer.svg"
+				}
+			]
+		},
+		{
+			"id": "content-carousel",
+			"theme": "dark",
+			"cards": [
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				},
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				},
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				},
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				}
+			]
+		},
+		{
+			"id": "content-carousel",
+			"theme": "light",
+			"cards": [
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder-content-card.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				},
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder-content-card.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				},
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder-content-card.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				},
+				{
+					"title": "Morbi in sem quis dui placerat",
+					"image": "placeholder-content-card.jpg",
+					"description": "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan."
+				}
+			]
+		},
+		{
+			"id": "hero-image",
+			"image": "placeholder-hero.jpg",
+			"title": "Lorem ipsum"
+		},
+		{
+			"id": "contact-form",
+			"primaryTitle": "Lorem ipsum",
+			"secondaryTitle": "Dolor sit amet"
+		}
+	]
+}

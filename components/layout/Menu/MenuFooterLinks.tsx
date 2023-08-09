@@ -22,13 +22,13 @@ const LinkTag = styled.a`
 
 const MenuFooterLinks = () => {
 	const {
-		privacyPiolicyLink,
+		privacyPolicyLink,
 		termsOfUseLink
 	} = siteSettings;
 
 	return (
 		<MenuFooterLinksWrapper className="menu-footer-links">
-			<Link href={privacyPiolicyLink} passHref>
+			<Link href={privacyPolicyLink} passHref>
 				<LinkTag className="type-small">
 					Privacy Policy
 				</LinkTag>

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { NextSeo } from 'next-seo';
+import Pagebuilder from '../components/layout/Pagebuilder';
 
 const siteSettings = require('../content/siteSettings.json');
+const data = require('../content/home.json');
 
 const PageWrapper = styled.div``;
 
@@ -10,15 +12,13 @@ const Page = () => {
 		seoDescription
 	} = siteSettings;
 
-	console.log('siteSettings', siteSettings);
-
 	return (
 		<PageWrapper>
 			<NextSeo
-				title="Focussed Assessing | Home"
+				title={data.seoTitle || ''}
 				description={seoDescription || ''}
 			/>
-			<Pagebuilder />
+			<Pagebuilder data={data.pageBuilder} />
 		</PageWrapper>
 	);
 };
