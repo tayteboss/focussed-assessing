@@ -23,8 +23,6 @@ const HeaderWrapper = styled.header<StyledProps>`
 	z-index: 100;
 	width: 100%;
 	background: var(--colour-white);
-	border-bottom-left-radius: var(--border-radius);
-	border-bottom-right-radius: var(--border-radius);
 	transform: ${(props) => props.$isActive ? 'translateY(0)' : 'translateY(-100%)'};
 
 	transition: all var(--transition-speed-default) var(--transition-ease);
@@ -57,6 +55,12 @@ const Header = ({ setMenuIsActive }: Props) => {
 	const handleScroll = () => {
 		const currentScrollPos = window.pageYOffset;
 		const isScrollingDown = currentScrollPos > prevScrollPosRef.current;
+
+		if (currentScrollPos < 110) {
+			setIsActive(true);
+			prevScrollPosRef.current = currentScrollPos;
+			return;
+		}
 
 		setIsActive(!isScrollingDown);
 
