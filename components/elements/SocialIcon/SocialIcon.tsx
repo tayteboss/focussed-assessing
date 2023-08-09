@@ -3,6 +3,8 @@ import InstagramSvg from '../../svgs/InstagramSvg';
 import pxToRem from '../../../utils/pxToRem';
 import Link from 'next/link';
 
+const siteSettings = require('../../../content/siteSettings.json');
+
 const SocialIconWrapper = styled.a`
 	width: ${pxToRem(48)};
 	height: ${pxToRem(48)};
@@ -32,8 +34,12 @@ const SocialIconWrapper = styled.a`
 `;
 
 const SocialIcon = ({ type = 'instagram' }) => {
+	const {
+		instagramLink
+	} = siteSettings;
+
 	return (
-		<Link href="/" passHref>
+		<Link href={instagramLink} passHref>
 			<SocialIconWrapper>
 				{type == 'instagram'  && (
 					<InstagramSvg />

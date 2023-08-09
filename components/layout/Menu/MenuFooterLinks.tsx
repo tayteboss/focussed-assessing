@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
+const siteSettings = require('../../../content/siteSettings.json');
+
 const MenuFooterLinksWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -19,14 +21,19 @@ const LinkTag = styled.a`
 `;
 
 const MenuFooterLinks = () => {
+	const {
+		privacyPiolicyLink,
+		termsOfUseLink
+	} = siteSettings;
+
 	return (
 		<MenuFooterLinksWrapper className="menu-footer-links">
-			<Link href="/" passHref>
+			<Link href={privacyPiolicyLink} passHref>
 				<LinkTag className="type-small">
 					Privacy Policy
 				</LinkTag>
 			</Link>
-			<Link href="/" passHref>
+			<Link href={termsOfUseLink} passHref>
 				<LinkTag className="type-small">
 					Terms of use
 				</LinkTag>

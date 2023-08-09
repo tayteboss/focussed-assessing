@@ -1,40 +1,26 @@
-import Head from 'next/head';
-import { renderMetaTags } from 'react-datocms';
 import styled from 'styled-components';
-import { getPage } from '../lib/datocms';
 import { NextSeo } from 'next-seo';
+
+const siteSettings = require('../content/siteSettings.json');
 
 const PageWrapper = styled.div``;
 
-type Props = {
-	data: {}
-};
-
-const Page = (props: Props) => {
+const Page = () => {
 	const {
-		data
-	} = props;
+		seoDescription
+	} = siteSettings;
+
+	console.log('siteSettings', siteSettings);
 
 	return (
-	<PageWrapper>
-		<NextSeo
-			title="Boiler"
-			description="Boiler Plate"
-		/>
-		Home
-	</PageWrapper>
+		<PageWrapper>
+			<NextSeo
+				title="Focussed Assessing | Home"
+				description={seoDescription || ''}
+			/>
+			<Pagebuilder />
+		</PageWrapper>
 	);
 };
-
-export async function getStaticProps() {
-	// const data = await getPage('home');
-	const data = false;
-
-	return {
-		props: {
-			data,
-		},
-	};
-}
 
 export default Page;
