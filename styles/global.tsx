@@ -112,6 +112,26 @@ export const GlobalStyles = createGlobalStyle`
 		{
 			font-size: ${theme.sizeMobile.h1};
 		}
+
+		&--blur-in {
+			* {
+				font-size: ${theme.size.h1};
+				line-height: 6rem;
+				letter-spacing: -1.92px;
+
+				@media ${theme.mediaBreakpoints.tabletPortrait}
+				{
+					font-size: ${theme.sizeTablet.h1};
+					line-height: 2.25rem;
+					letter-spacing: -0.6px;
+				}
+
+				@media ${theme.mediaBreakpoints.mobile}
+				{
+					font-size: ${theme.sizeMobile.h1};
+				}
+			}
+		}
 	}
 
 	h2,
@@ -173,6 +193,107 @@ export const GlobalStyles = createGlobalStyle`
 		line-height: 1.25rem;
 	}
 
+	.content-block {
+		&--dark-green {
+			.content-block__inner {
+				background-color: var(--colour-dark-green);
+			}
+
+			.content-block__primary-title {
+				color: var(--colour-primary-green);
+			}
+
+			.content-block__secondary-title {
+				color: var(--colour-white);
+			}
+
+			.content-block__content {
+				color: var(--colour-white);
+			}
+
+			.scroll-indicator {
+				border-color: var(--colour-primary-green);
+
+				&:hover {
+					background: var(--colour-primary-green);
+
+					svg {
+						path {
+							stroke: var(--colour-white);
+						}
+					}
+				}
+			}
+		}
+
+		&--light-green {
+			.content-block__inner {
+				background-color: var(--colour-primary-green);
+			}
+
+			.content-block__primary-title {
+				color: var(--colour-dark-green);
+			}
+
+			.content-block__secondary-title {
+				color: var(--colour-white);
+			}
+
+			.content-block__content {
+				color: var(--colour-white);
+			}
+
+			.scroll-indicator {
+				border-color: var(--colour-white);
+
+				&:hover {
+					background: var(--colour-white);
+
+					svg {
+						path {
+							stroke: var(--colour-primary-green);
+						}
+					}
+				}
+			}
+		}
+
+		&--white {
+			padding: ${pxToRem(24)} 0;
+			background: var(--colour-dark-green);
+
+			.content-block__inner {
+				background-color: var(--colour-white);
+			}
+
+			.content-block__primary-title {
+				color: var(--colour-dark-green);
+			}
+
+			.content-block__secondary-title {
+				color: var(--colour-primary-green);
+			}
+
+			.content-block__content {
+				color: var(--colour-dark-green);
+			}
+
+			.scroll-indicator {
+				border-color: var(--colour-primary-green);
+
+				&:hover {
+					background: var(--colour-primary-green);
+
+					svg {
+						path {
+							stroke: var(--colour-white);
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.view-element-fade-in
 	{
 		opacity: 0;
@@ -188,9 +309,10 @@ export const GlobalStyles = createGlobalStyle`
 	.view-element-blur-in
 	{
 		opacity: 0;
-		filter: blur(6px);
+		filter: blur(15px);
 
 		transition: all var(--transition-speed-default) var(--transition-ease);
+		transition-delay: 300ms;
 
 		&--in-view
 		{
