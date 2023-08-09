@@ -29,3 +29,8 @@ export type Transitions = {
 		}
 	}
 };
+
+export type StepCardType = {
+	title: string;
+	content: string;
+}
