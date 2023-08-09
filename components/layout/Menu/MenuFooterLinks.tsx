@@ -20,7 +20,7 @@ const LinkTag = styled.a`
 
 const MenuFooterLinks = () => {
 	return (
-		<MenuFooterLinksWrapper>
+		<MenuFooterLinksWrapper className="menu-footer-links">
 			<Link href="/" passHref>
 				<LinkTag className="type-small">
 					Privacy Policy

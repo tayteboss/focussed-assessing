@@ -61,6 +61,10 @@ export const GlobalStyles = createGlobalStyle`
 		position: relative;
 	}
 
+	main {
+		min-height: 100vh;
+	}
+
 	input,
 	textarea,
 	select,

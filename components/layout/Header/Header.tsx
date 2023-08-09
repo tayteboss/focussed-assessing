@@ -81,7 +81,7 @@ const Header = ({ setMenuIsActive }: Props) => {
 				<HeaderInner>
 					<Link href="/" passHref>
 						<LinkTag>
-							<LogoSvg className="logo" />
+							<LogoSvg className="logo" useDarkVersion />
 						</LinkTag>
 					</Link>
 					<MenuTrigger setMenuIsActive={setMenuIsActive} />

@@ -36,7 +36,7 @@ const MenuLogo = () => {
 				inView ? 'view-element-fade-in--in-view' : ''
 			}`}
 		>
-			<LogoSvg className="logo" useLightTheme />
+			<LogoSvg className="logo" useLightVersion />
 		</MenuLogoWrapper>
 	);
 };
