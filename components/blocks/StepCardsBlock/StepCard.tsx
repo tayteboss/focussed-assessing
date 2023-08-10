@@ -17,6 +17,10 @@ const StepCardWrapper = styled.div`
 	height: 100vh;
 	width: 100%;
 
+	&:last-child {
+		height: auto;
+	}
+
 	@media ${(props) => props.theme.mediaBreakpoints.tabletMedium} {
 		top: 10vh;
 	}
@@ -132,9 +136,7 @@ const StepCard = (props: Props) => {
 	});
 
 	return (
-		<StepCardWrapper
-			ref={ref}
-		>
+		<StepCardWrapper ref={ref}>
 			<Inner
 				style={{
 					transform,

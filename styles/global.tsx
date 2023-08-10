@@ -293,6 +293,24 @@ export const GlobalStyles = createGlobalStyle`
 		}
 	}
 
+	.carousel-block {
+		&--light {
+			background: var(--colour-white);
+
+			.carousel-block__title {
+				color: var(--colour-dark-green);
+			}
+		}
+
+		&--dark {
+			background: var(--colour-dark-green);
+
+			.carousel-block__title {
+				color: var(--colour-white);
+			}
+		}
+	}
+
 	.view-element-fade-in
 	{
 		opacity: 0;
@@ -345,6 +363,25 @@ export const GlobalStyles = createGlobalStyle`
 		{
 			opacity: 1;
 			transform: scale(1);
+		}
+	}
+
+	.view-element-image-blur-up
+	{
+		img {
+			transform: scale(1.1);
+			filter: blur(5px);
+
+			transition: all 3000ms var(--transition-ease);
+		}
+
+
+		&--in-view
+		{
+			img {
+				transform: scale(1);
+				filter: blur(0px);
+			}
 		}
 	}
 

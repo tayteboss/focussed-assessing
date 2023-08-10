@@ -34,3 +34,16 @@ export type StepCardType = {
 	title: string;
 	content: string;
 }
+
+export type NumberCardType = {
+	title?: string;
+	description?: string;
+	amount?: string;
+	icon?: string;
+}
+
+export type ContentCardType = {
+	title?: string;
+	description?: string;
+	image?: string;
+}

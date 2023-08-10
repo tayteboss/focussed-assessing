@@ -33,7 +33,7 @@ const Inner = styled.div`
 	border-radius: var(--border-radius);
 
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
-		height: calc(100vh - 32px);
+		height: calc(80vh - 32px);
 		padding: ${pxToRem(24)} ${pxToRem(16)};
 	}
 `;

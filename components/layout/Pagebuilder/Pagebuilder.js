@@ -3,10 +3,9 @@ import ContentBlock from '../../blocks/ContentBlock';
 import ScrollHeroVideoBlock from '../../blocks/ScrollHeroVideoBlock';
 import IntersectionContentBlock from '../../blocks/IntersectionContentBlock';
 import StepCardsBlock from '../../blocks/StepCardsBlock';
-import NumbersCarouselBlock from '../../blocks/NumbersCarouselBlock';
-import ContentCarouselBlock from '../../blocks/ContentCarouselBlock';
 import HeroImageBlock from '../../blocks/HeroImageBlock';
 import ContactFormBlock from '../../blocks/ContactFormBlock';
+import CarouselBlock from '../../blocks/CarouselBlock';
 
 const PagebuilderWrapper = styled.div`
 	padding-top: var(--header-h);
@@ -19,8 +18,8 @@ const Pagebuilder = ({ data }) => {
 		"content": ContentBlock,
 		"intersection-content": IntersectionContentBlock,
 		"step-cards": StepCardsBlock,
-		"numbers-carousel": NumbersCarouselBlock,
-		"content-carousel": ContentCarouselBlock,
+		"numbers-carousel": CarouselBlock,
+		"content-carousel": CarouselBlock,
 		"hero-image": HeroImageBlock,
 		"contact-form": ContactFormBlock,
 	};

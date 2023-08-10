@@ -11,7 +11,7 @@ type Props = {
 
 const StepCardsBlockWrapper = styled.section`
 	background: var(--colour-dark-green);
-	padding: 50vh 0;
+	padding: 25vh 0;
 `;
 
 const Inner = styled.div``;
