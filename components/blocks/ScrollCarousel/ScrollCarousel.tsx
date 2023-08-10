@@ -62,9 +62,6 @@ const ScrollCarousel = ({ data, useNumbersCards }: Props) => {
 		setWindowWidth(window.innerWidth);
 	}, [distanceToTop]);
 
-	console.log('data', data);
-	
-
 	return (
 		<ScrollCarouselWrapper $dataLength={dataLength}>
 			<Inner

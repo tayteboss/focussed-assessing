@@ -370,7 +370,7 @@ export const GlobalStyles = createGlobalStyle`
 	{
 		img {
 			transform: scale(1.1);
-			filter: blur(5px);
+			filter: blur(3px);
 
 			transition: all 3000ms var(--transition-ease);
 		}

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import pxToRem from '../../../utils/pxToRem';
 
 const ScrollHeroVideoBlockWrapper = styled.section`
-	height: 500vh;
+	height: 300vh;
 	padding: 0 ${pxToRem(24)};
 	margin-bottom: ${pxToRem(24)};
 
@@ -93,7 +93,7 @@ const ScrollHeroVideoBlock = () => {
 			const html = htmlRef.current;
 			const scrollHandler = () => {
 				const scrollTop = window.scrollY;
-				const maxScrollTop = document.documentElement.scrollHeight - window.innerHeight;
+				const maxScrollTop = window.innerHeight * 2;
 				const scrollFraction = scrollTop / maxScrollTop;
 				const frameIndex = Math.min(
 					frameCount - 1,
