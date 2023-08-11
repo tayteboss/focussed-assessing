@@ -4,12 +4,11 @@ import pxToRem from '../../../utils/pxToRem';
 
 const ScrollHeroVideoBlockWrapper = styled.section`
 	height: 300vh;
-	padding: 0 ${pxToRem(24)};
-	margin-bottom: ${pxToRem(24)};
+	padding: ${pxToRem(24)};
+	background: var(--colour-light-grey);
 
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
-		padding: 0 ${pxToRem(16)};
-		margin-bottom: ${pxToRem(16)};
+		padding: ${pxToRem(24)} ${pxToRem(16)};
 	}
 `;
 

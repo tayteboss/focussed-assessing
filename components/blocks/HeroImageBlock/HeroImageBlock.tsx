@@ -13,7 +13,12 @@ type Props = {
 	}
 }
 
-const HeroImageBlockWrapper = styled.section``;
+const HeroImageBlockWrapper = styled.section`
+	background: var(--colour-light-grey);
+	position: relative;
+	z-index: 2;
+	padding: ${pxToRem(24)} 0;
+`;
 
 const Inner = styled.div`
 	position: relative;

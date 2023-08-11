@@ -17,7 +17,10 @@ type Props = {
 }
 
 const ContentBlockWrapper = styled.section`
-	margin-bottom: ${pxToRem(24)};
+	position: relative;
+	z-index: 2;
+	padding: ${pxToRem(24)} 0;
+	background: var(--colour-light-grey);
 
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
 		margin-bottom: ${pxToRem(16)};

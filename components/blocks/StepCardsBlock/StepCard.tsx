@@ -14,7 +14,7 @@ const StepCardWrapper = styled.div`
 	position: sticky;
 	top: 20vh;
 	left: 0;
-	height: 100vh;
+	height: 80vh;
 	width: 100%;
 
 	&:last-child {
