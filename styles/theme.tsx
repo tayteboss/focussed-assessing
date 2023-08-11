@@ -3,7 +3,7 @@ export const theme = {
 		black: '#1A1919',
 		white: '#F2F3EF',
 		midGrey: '#A0A0A0',
-		lightGrey: '#F4F4F4',
+		lightGrey: '#eaeaea',
 		darkGreen: '#17382E',
 		midGreen: '#125946',
 		primaryGreen: '#24B58F',
@@ -51,7 +51,7 @@ export const theme = {
 		innerWrapper: '1920px',
 	},
 	transitionSpeed: {
-		default: '300ms',
+		default: '400ms',
 		fast: '200ms',
 		extraFast: '100ms',
 		slow: '500ms',

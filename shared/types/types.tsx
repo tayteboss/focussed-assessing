@@ -47,3 +47,13 @@ export type ContentCardType = {
 	description?: string;
 	image?: string;
 }
+
+export type IntersectionType = {
+	primaryTitle: string;
+	secondaryTitle: string;
+	topContentRichText: string;
+	bottomContentHeading: string;
+	bottomContentRichText: string;
+	image: string;
+	theme: string;
+}

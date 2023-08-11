@@ -44,7 +44,7 @@ export const GlobalStyles = createGlobalStyle`
 
 	html {
 		scroll-behavior: smooth;
-		background: ${theme.colours.white};
+		background: var(--colour-light-grey);
 		font-size: 16px;
 
 		&.no-scroll {
@@ -58,6 +58,7 @@ export const GlobalStyles = createGlobalStyle`
 
 	body {
 		position: relative;
+		background: var(--colour-light-grey);
 	}
 
 	main {
@@ -289,6 +290,64 @@ export const GlobalStyles = createGlobalStyle`
 						}
 					}
 				}
+			}
+		}
+	}
+
+	.intersection-block {
+		&--dark {
+			background: var(--colour-dark-green);
+
+			.intersection-block__primary-title {
+				color: var(--colour-primary-green);
+			}
+
+			.intersection-block__secondary-title {
+				color: var(--colour-white);
+			}
+
+			.intersection-block__content {
+				color: var(--colour-white);
+			}
+
+			.intersection-block__content-heading {
+				color: var(--colour-white);
+			}
+
+			.intersection-block__swiper-top {
+				background: var(--colour-white);
+			}
+
+			.intersection-block__swiper-bottom {
+				background: var(--colour-dark-green);
+			}
+		}
+
+		&--light {
+			background: var(--colour-light-grey);
+
+			.intersection-block__primary-title {
+				color: var(--colour-primary-green);
+			}
+
+			.intersection-block__secondary-title {
+				color: var(--colour-dark-green);
+			}
+
+			.intersection-block__content-heading {
+				color: var(--colour-primary-green);
+			}
+
+			.intersection-block__content {
+				color: var(--colour-black);
+			}
+
+			.intersection-block__swiper-top {
+				background: var(--colour-white);
+			}
+
+			.intersection-block__swiper-bottom {
+				background: var(--colour-light-grey);
 			}
 		}
 	}
