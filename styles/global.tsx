@@ -446,7 +446,7 @@ export const GlobalStyles = createGlobalStyle`
 		&--in-view
 		{
 			img {
-				transform: scale(1);
+				transform: scale(1.01);
 				filter: blur(0px);
 			}
 		}
