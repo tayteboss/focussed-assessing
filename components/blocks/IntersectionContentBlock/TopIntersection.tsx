@@ -128,7 +128,7 @@ const TopIntersection = (props: Props) => {
 					<LayoutGrid>
 						<ContentWrapper>
 							<Content
-								className={`intersection-block__content type-p view-element-blur-in ${
+								className={`intersection-block__content type-p content view-element-blur-in ${
 									inView ? 'view-element-blur-in--in-view' : ''
 								}`}
 								dangerouslySetInnerHTML={{ __html: topContentRichText }}

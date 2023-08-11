@@ -22,7 +22,7 @@ const HeaderWrapper = styled.header<StyledProps>`
 	left: 0;
 	z-index: 100;
 	width: 100%;
-	background: var(--colour-white);
+	background: var(--colour-light-grey);
 	transform: ${(props) => props.$isActive ? 'translateY(0)' : 'translateY(-100%)'};
 
 	transition: all var(--transition-speed-default) var(--transition-ease);

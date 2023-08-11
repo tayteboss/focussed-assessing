@@ -193,6 +193,14 @@ export const GlobalStyles = createGlobalStyle`
 		line-height: 1.25rem;
 	}
 
+	.content {
+		& > * {
+			&:not(:last-child) {
+				margin-bottom: ${pxToRem(24)};
+			}
+		}
+	}
+
 	.content-block {
 		&--dark-green {
 			.content-block__inner {

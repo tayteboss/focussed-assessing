@@ -175,7 +175,7 @@ const BottomIntersection = (props: Props) => {
 						)}
 						{bottomContentRichText && (
 							<Content
-								className="intersection-block__content type-p"
+								className="intersection-block__content type-p content"
 								dangerouslySetInnerHTML={{ __html: bottomContentRichText }}
 							/>
 						)}
