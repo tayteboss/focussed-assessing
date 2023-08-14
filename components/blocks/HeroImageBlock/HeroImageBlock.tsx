@@ -17,7 +17,11 @@ const HeroImageBlockWrapper = styled.section`
 	background: var(--colour-light-grey);
 	position: relative;
 	z-index: 2;
-	padding: ${pxToRem(24)} 0;
+	padding: ${pxToRem(24)};
+
+	&:first-child {
+		padding-top: 0;
+	}
 `;
 
 const Inner = styled.div`

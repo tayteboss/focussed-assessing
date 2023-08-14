@@ -18,7 +18,7 @@ type Props = {
 
 const ContentBlockWrapper = styled.section`
 	position: relative;
-	z-index: 2;
+	z-index: 5;
 	padding: ${pxToRem(24)} 0;
 	background: var(--colour-light-grey);
 

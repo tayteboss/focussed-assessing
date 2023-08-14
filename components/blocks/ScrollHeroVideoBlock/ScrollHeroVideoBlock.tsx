@@ -6,9 +6,19 @@ const ScrollHeroVideoBlockWrapper = styled.section`
 	height: 300vh;
 	padding: ${pxToRem(24)};
 	background: var(--colour-light-grey);
+	position: relative;
+	z-index: 5;
+
+	&:first-child {
+		padding-top: 0;
+	}
 
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
 		padding: ${pxToRem(24)} ${pxToRem(16)};
+
+		&:first-child {
+			padding-top: 0;
+		}
 	}
 `;
 

@@ -3,6 +3,9 @@ import LayoutWrapper from '../../common/LayoutWrapper';
 import pxToRem from '../../../utils/pxToRem';
 import BlurInText from '../../elements/BlurInText';
 import { useInView } from 'react-intersection-observer';
+import LayoutGrid from '../../common/LayoutGrid';
+import ContactBlockForm from './ContactBlockForm';
+import ContactBlockInfo from './ContactBlockInfo';
 
 type Props = {
 	data: {
@@ -13,6 +16,8 @@ type Props = {
 
 const ContactFormBlockWrapper = styled.section`
 	background: var(--colour-dark-green);
+	position: relative;
+	z-index: 5;
 
 	.contact-block {
 		&__primary-title {
@@ -74,6 +79,10 @@ const ContactFormBlock = ({ data }: Props) => {
 							</Title>
 						)}
 					</TitleWrapper>
+					<LayoutGrid>
+						<ContactBlockInfo />
+						<ContactBlockForm />
+					</LayoutGrid>
 				</Inner>
 			</LayoutWrapper>
 		</ContactFormBlockWrapper>
