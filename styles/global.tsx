@@ -176,8 +176,7 @@ export const GlobalStyles = createGlobalStyle`
 	p,
 	.type-p,
 	a,
-	button,
-	div {
+	button {
 		font-size: ${theme.size.body};
 		line-height: 1.75rem;
 

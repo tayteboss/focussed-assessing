@@ -4,6 +4,11 @@ import pxToRem from '../../../utils/pxToRem';
 const ContactBlockInfoWrapper = styled.div`
 	grid-column: span 6;
 
+	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
+		grid-column: 1 / -1;
+		margin-bottom: ${pxToRem(64)};
+	}
+
 	h3,
 	p,
 	a {
@@ -32,6 +37,14 @@ const LinkTag = styled.a`
 	color: var(--colour-primary-green);
 
 	transition: all var(--transition-speed-default) var(--transition-ease);
+
+	@media ${(props) => props.theme.mediaBreakpoints.tabletMedium} {
+		font-size: 1rem !important;
+	}
+
+	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
+		font-size: 0.875rem !important;
+	}
 
 	&:hover {
 		color: var(--colour-white);

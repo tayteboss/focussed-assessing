@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { ContentCardType, NumberCardType } from '../../../shared/types/types';
 import ContentCarouselCard from '../ContentCarouselBlock/ContentCarouselCard';

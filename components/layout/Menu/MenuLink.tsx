@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import pxToRem from '../../../utils/pxToRem';
@@ -8,26 +9,34 @@ type Props = {
 	link: string;
 }
 
-const MenuLinkWrapper = styled(motion.div)``;
+const MenuLinkWrapper = styled(motion.div)`
+	color: var(--colour-white);
+
+	&:hover {
+		color: var(--colour-dark-green);
+	}
+`;
 
 const LinkTag = styled.a`
 	font-size: ${pxToRem(96)};
 	line-height: ${pxToRem(112)};
 	letter-spacing: -1.92px;
-	color: var(--colour-white);
 	text-decoration: none;
+	color: var(--colour-white);
+	display: flex;
+	align-items: flex-end;
 
 	transition: all var(--transition-speed-default) var(--transition-ease);
+
+	&:hover {
+		color: var(--colour-dark-green);
+	}
 
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
 		font-size: ${pxToRem(56)};
 		line-height: ${pxToRem(56)};
 		margin-bottom: ${pxToRem(24)};
 		display: inline-block;
-	}
-
-	&:hover {
-		color: var(--colour-dark-green);
 	}
 `;
 

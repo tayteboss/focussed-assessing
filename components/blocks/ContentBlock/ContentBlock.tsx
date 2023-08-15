@@ -21,10 +21,6 @@ const ContentBlockWrapper = styled.section`
 	z-index: 5;
 	padding: ${pxToRem(24)} 0;
 	background: var(--colour-light-grey);
-
-	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
-		margin-bottom: ${pxToRem(16)};
-	}
 `;
 
 const Inner = styled.div`

@@ -22,8 +22,11 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "next-sitemap.js", "pages/_document.js", "components/layout/Pagebuilder/Pagebuilder.js"  ],
+    "**/*.tsx",
+    "next-sitemap.js",
+    "pages/_document.js",
+    "components/layout/Pagebuilder/Pagebuilder.js"
+  ],
   "exclude": [
     "node_modules"
   ]

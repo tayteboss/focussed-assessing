@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import LayoutWrapper from '../../common/LayoutWrapper';
 import pxToRem from '../../../utils/pxToRem';
@@ -15,9 +16,13 @@ type Props = {
 };
 
 const ContactFormBlockWrapper = styled.section`
-	background: var(--colour-dark-green);
 	position: relative;
 	z-index: 5;
+	padding: ${pxToRem(24)} 0;
+
+	&:first-child {
+		padding-top: 0;
+	}
 
 	.contact-block {
 		&__primary-title {
@@ -32,10 +37,20 @@ const ContactFormBlockWrapper = styled.section`
 
 const Inner = styled.div`
 	padding: ${pxToRem(72)} ${pxToRem(24)};
+	background: var(--colour-dark-green);
+	border-radius: var(--border-radius);
+
+	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
+		padding: ${pxToRem(48)} ${pxToRem(24)};
+	}
 `;
 
 const TitleWrapper = styled.div`
 	margin-bottom: ${pxToRem(260)};
+
+	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
+		margin-bottom: ${pxToRem(120)};
+	}
 `;
 
 const Title = styled.div``;
