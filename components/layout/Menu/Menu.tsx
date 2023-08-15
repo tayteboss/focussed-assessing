@@ -68,6 +68,8 @@ const Menu = (props: Props) => {
 		menuIsActive
 	} = props;
 
+
+
 	return (
 		<MenuWrapper
 			variants={wrapperVariants}

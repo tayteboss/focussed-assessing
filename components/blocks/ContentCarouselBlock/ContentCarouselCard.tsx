@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { ContentCardType } from '../../../shared/types/types';
 import Image from 'next/image';
 import pxToRem from '../../../utils/pxToRem';
-import { useInView } from 'react-intersection-observer';
 
 type Props = {
 	data: ContentCardType;
@@ -68,19 +67,9 @@ const ContentCarouselCard = ({ data }: Props) => {
 		image
 	} = data;
 
-	const { ref, inView } = useInView({
-		triggerOnce: true,
-		threshold: 0.2,
-		rootMargin: '-50px'
-	});
-
 	return (
-		<ContentCarouselCardWrapper ref={ref}>
-			<ImageWrapper
-				className={`view-element-image-blur-up ${
-					inView ? 'view-element-image-blur-up--in-view' : ''
-				}`}
-			>
+		<ContentCarouselCardWrapper>
+			<ImageWrapper>
 				<Image
 					src={`/images/${image}`}
 					layout="fill"

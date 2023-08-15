@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
-import { ReactNode, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import Menu from './Menu';
+import { useRouter } from 'next/router';
 
 const Main = styled.main``;
 
@@ -15,7 +16,13 @@ const Layout = (props: Props) => {
 		children
 	} = props;
 
-	const [MenuIsActive, setMenuIsActive] = useState(false);
+	const [menuIsActive, setMenuIsActive] = useState(false);
+
+	const router = useRouter();
+
+	useEffect(() => {
+		setMenuIsActive(false);
+	}, [router.pathname]);
 
 	return (
 		<>
@@ -24,7 +31,7 @@ const Layout = (props: Props) => {
 			/>
 			<Menu
 				setMenuIsActive={setMenuIsActive}
-				menuIsActive={MenuIsActive}
+				menuIsActive={menuIsActive}
 			/>
 			<Main>{children}</Main>
 			<Footer />

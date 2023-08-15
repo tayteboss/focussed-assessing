@@ -9,7 +9,7 @@ type Props = {
 }
 
 const siteSettings = require('../content/siteSettings.json');
-const data = require('../content/home.json');
+const data = require('../content/services.json');
 
 const PageWrapper = styled(motion.div)``;
 

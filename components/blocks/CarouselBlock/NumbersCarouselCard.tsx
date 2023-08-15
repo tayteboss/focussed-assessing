@@ -14,6 +14,10 @@ const TopWrapper = styled.div``;
 
 const Title = styled.h4`
 	margin-bottom: ${pxToRem(64)};
+	font-size: ${pxToRem(22)};
+	line-height: ${pxToRem(28)};
+	font-family: var(--font-bold);
+	color: var(--colour-white);
 
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
 		margin-bottom: ${pxToRem(32)};
@@ -21,18 +25,8 @@ const Title = styled.h4`
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		margin-bottom: 0;
-	}
-
-	* {
-		font-size: ${pxToRem(22)};
-		line-height: ${pxToRem(28)};
-		font-family: var(--font-bold);
-		color: var(--colour-white);
-
-		@media ${(props) => props.theme.mediaBreakpoints.mobile} {
-			font-size: ${pxToRem(14)};
-			line-height: ${pxToRem(24)};
-		}
+		font-size: ${pxToRem(14)};
+		line-height: ${pxToRem(24)};
 	}
 `;
 
@@ -135,7 +129,7 @@ const NumbersCarouselCard = ({ data }: Props) => {
 			<TopWrapper>
 				{title && (
 					<Title ref={ref2}>
-						<BlurInText text={title} active={inView2} />
+						{title}
 					</Title>
 				)}
 				<AnimatePresence>

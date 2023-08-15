@@ -111,9 +111,8 @@ const StepCard = (props: Props) => {
 	const filter = useTransform(
 		scrollY,
 		[distanceToTop - (windowHeight / 10), distanceToTop + (windowHeight * 2)],
-		['blur(0px) brightness(1)', 'blur(15px) brightness(0.7)']
+		['blur(0px)', 'blur(7px)']
 	);
-
 
 	const width = useTransform(
 		scrollY,
@@ -136,7 +135,10 @@ const StepCard = (props: Props) => {
 	});
 
 	return (
-		<StepCardWrapper ref={ref}>
+		<StepCardWrapper
+			ref={ref}
+			className="peformance"
+		>
 			<Inner
 				style={{
 					transform,
