@@ -72,6 +72,8 @@ const Content = styled.p`
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		width: 100%;
+		font-size: ${pxToRem(16)};
+		line-height: ${pxToRem(22)};
 	}
 `;
 

@@ -26,7 +26,6 @@ const ScrollCarouselCardWrapper = styled(motion.div)`
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 75vh;
 	}
 `;
 

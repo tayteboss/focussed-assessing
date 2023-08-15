@@ -35,6 +35,10 @@ const Inner = styled.div`
 		height: calc(80vh - 32px);
 		padding: ${pxToRem(24)} ${pxToRem(16)};
 	}
+
+	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
+		height: auto;
+	}
 `;
 
 const ContentBlockTop = styled.div`
@@ -52,6 +56,10 @@ const TitleWrapper = styled.div`
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
 		margin-bottom: ${pxToRem(100)};
 	}
+
+	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
+		margin-bottom: ${pxToRem(64)};
+	}
 `;
 
 const Title = styled.div``;
@@ -59,6 +67,7 @@ const Title = styled.div``;
 const IconWrapper = styled.div`
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
 		align-self: flex-end;
+		margin-bottom: ${pxToRem(24)};
 	}
 `;
 

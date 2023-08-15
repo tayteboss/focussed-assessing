@@ -30,7 +30,7 @@ const MenuFooterLinks = () => {
 		<MenuFooterLinksWrapper className="menu-footer-links">
 			<Link href={privacyPolicyLink} passHref>
 				<LinkTag className="type-small">
-					Privacy Policy
+					Privacy policy
 				</LinkTag>
 			</Link>
 			<Link href={termsOfUseLink} passHref>

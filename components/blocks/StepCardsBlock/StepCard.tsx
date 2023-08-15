@@ -44,6 +44,9 @@ const Title = styled.h3`
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		margin-bottom: ${pxToRem(32)};
+		font-size: ${pxToRem(16)};
+		line-height: ${pxToRem(22)};
+		padding-bottom: ${pxToRem(12)};
 	}
 `;
 

@@ -6,6 +6,10 @@ import { useInView } from 'react-intersection-observer';
 import LayoutGrid from '../../common/LayoutGrid';
 import { motion } from 'framer-motion';
 
+type StyledProps = {
+	$noMarginBottom?: boolean;
+}
+
 type Props = {
 	primaryTitle: string;
 	secondaryTitle: string;
@@ -29,8 +33,12 @@ const TopIntersectionWrapper = styled.div`
 	}
 `;
 
-const TitleWrapper = styled.div`
+const TitleWrapper = styled.div<StyledProps>`
 	margin-bottom: ${pxToRem(100)};
+
+	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
+		margin-bottom: ${(props) => props.$noMarginBottom ? 0 : pxToRem(100)};
+	}
 `;
 
 const Title = styled.div``;
@@ -104,7 +112,9 @@ const TopIntersection = (props: Props) => {
 	return (
 		<TopIntersectionWrapper ref={ref}>
 			<LayoutWrapper>
-				<TitleWrapper>
+				<TitleWrapper
+					$noMarginBottom={!topContentRichText}
+				>
 					{primaryTitle && (
 						<Title
 							className="intersection-block__primary-title type-h1--blur-in"

@@ -15,7 +15,7 @@ const ContentCarouselCardWrapper = styled.div`
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		flex-direction: column;
 		justify-content: space-between;
-		height: 75vh;
+		height: auto;
 	}
 `;
 
@@ -29,8 +29,15 @@ const ImageWrapper = styled.div`
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		width: 100%;
+		height: ${pxToRem(300)};
 		margin-bottom: ${pxToRem(24)};
 	}
+`;
+
+const Img = styled.img`
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
 `;
 
 const ContentWrapper = styled.div`
@@ -46,6 +53,7 @@ const Title = styled.h4`
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		font-size: ${pxToRem(30)};
 		line-height: ${pxToRem(36)};
+		margin-bottom: ${pxToRem(72)};
 	}
 `;
 
@@ -70,10 +78,8 @@ const ContentCarouselCard = ({ data }: Props) => {
 	return (
 		<ContentCarouselCardWrapper>
 			<ImageWrapper>
-				<Image
+				<Img
 					src={`/images/${image}`}
-					layout="fill"
-					objectFit="cover"
 				/>
 			</ImageWrapper>
 			<ContentWrapper>
