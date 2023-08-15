@@ -15,7 +15,7 @@ const TopWrapper = styled.div``;
 const Title = styled.h4`
 	margin-bottom: ${pxToRem(64)};
 	font-size: ${pxToRem(22)};
-	line-height: ${pxToRem(28)};
+	line-height: 1.2;
 	font-family: var(--font-bold);
 	color: var(--colour-white);
 
@@ -26,7 +26,6 @@ const Title = styled.h4`
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		margin-bottom: 0;
 		font-size: ${pxToRem(14)};
-		line-height: ${pxToRem(24)};
 	}
 `;
 
@@ -34,7 +33,7 @@ const Amount = styled(motion.div)`
 	margin-bottom: 10vh;
 	color: var(--colour-white);
 	font-size: 10vw;
-	line-height: ${pxToRem(120)};
+	line-height: 1.2;
 	font-family: var(--font-bold);
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
@@ -141,6 +140,7 @@ const NumbersCarouselCard = ({ data }: Props) => {
 							initial='hidden'
 							animate='visible'
 							exit='hidden'
+							className="performance"
 						>
 							+$
 							{inView2 && (

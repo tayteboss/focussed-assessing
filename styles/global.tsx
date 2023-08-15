@@ -98,13 +98,12 @@ export const GlobalStyles = createGlobalStyle`
 	h1,
 	.type-h1 {
 		font-size: ${theme.size.h1};
-		line-height: 6rem;
+		line-height: 1.2;
 		letter-spacing: -1.92px;
 
 		@media ${theme.mediaBreakpoints.tabletPortrait}
 		{
 			font-size: ${theme.sizeTablet.h1};
-			line-height: 2.25rem;
 			letter-spacing: -0.6px;
 		}
 
@@ -116,13 +115,12 @@ export const GlobalStyles = createGlobalStyle`
 		&--blur-in {
 			* {
 				font-size: ${theme.size.h1};
-				line-height: 6rem;
+				line-height: 1.2;
 				letter-spacing: -1.92px;
 
 				@media ${theme.mediaBreakpoints.tabletPortrait}
 				{
 					font-size: ${theme.sizeTablet.h1};
-					line-height: 2.25rem;
 					letter-spacing: -0.6px;
 				}
 
@@ -139,13 +137,12 @@ export const GlobalStyles = createGlobalStyle`
 	h3,
 	.type-h3 {
 		font-size: ${theme.size.h2};
-		line-height: 3rem;
+		line-height: 1.2;
 		letter-spacing: -0.84px;
 
 		@media ${theme.mediaBreakpoints.tabletPortrait}
 		{
 			font-size: ${theme.sizeTablet.h2};
-			line-height: 2.25rem;
 			letter-spacing: -0.6px;
 		}
 
@@ -158,12 +155,11 @@ export const GlobalStyles = createGlobalStyle`
 	h4,
 	.type-h4 {
 		font-size: ${theme.size.h4};
-		line-height: 1.75rem;
+		line-height: 1.2;
 
 		@media ${theme.mediaBreakpoints.tabletPortrait}
 		{
 			font-size: ${theme.sizeTablet.h4};
-			line-height: 1.375rem;
 			letter-spacing: -0.6px;
 		}
 

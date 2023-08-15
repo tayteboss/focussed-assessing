@@ -10,7 +10,7 @@ const ContactBlockFormWrapper = styled.div<StyledProps>`
 	grid-column: span 6;
 	color: var(--colour-white);
 	pointer-events: ${({ $isSending }) => $isSending ? 'none' : 'auto'};
-	opacity: ${({ $isSending }) => $isSending ? '0.5' : '1'};
+	opacity: ${({ $isSending }) => $isSending ? '0.4' : '1'};
 
 	@media ${(props) => props.theme.mediaBreakpoints.tabletPortrait} {
 		grid-column: 1 / -1;
@@ -55,6 +55,7 @@ const Form = styled.form`
 		align-self: flex-end;
 		margin-top: ${pxToRem(8)};
 		cursor: pointer;
+		text-align: center;
 
 		transition: all var(--transition-speed-default) var(--transition-ease);
 
@@ -85,11 +86,11 @@ const Success = styled.p`
 const ContactBlockForm = () => {
 	const [result, setResult] = React.useState("");
 
-	const onSubmit = async (event) => {
+	const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-		setResult("Sending....");
+		setResult("Sending...");
 
-		const formData = new FormData(event.target);
+		const formData = new FormData(event.currentTarget);
 
 		formData.append("access_key", "339569de-c63d-4490-bd54-99f3ee659ab4");
 
@@ -133,7 +134,11 @@ const ContactBlockForm = () => {
 							placeholder="Please let us know how we might be able to help you"
 							required
 						></textarea>
-						<input className="button" type="submit" />
+						<input
+							className="button"
+							type="submit"
+							value={result === 'Sending...' ? 'Sending' : 'Submit'}
+						/>
 					</Form>
 				</ContactBlockFormWrapper>
 			)}
