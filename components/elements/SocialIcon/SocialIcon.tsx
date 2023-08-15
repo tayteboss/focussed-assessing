@@ -40,7 +40,7 @@ const SocialIcon = ({ type = 'instagram' }) => {
 
 	return (
 		<Link href={instagramLink} passHref>
-			<SocialIconWrapper>
+			<SocialIconWrapper target="_blank">
 				{type == 'instagram'  && (
 					<InstagramSvg />
 				)}
