@@ -31,6 +31,10 @@ const Outer = styled.div`
 	top: 0;
 	left: 0;
 	overflow-x: hidden;
+	backface-visibility: hidden;
+	perspective: 1000;
+	transform: translate3d(0,0,0);
+	transform: translateZ(0);
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		top: ${pxToRem(24)};

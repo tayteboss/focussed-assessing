@@ -56,7 +56,7 @@ const ScrollCarouselCard = (props: Props) => {
 	const filter = useTransform(
 		scrollY,
 		[first, second, third],
-		['blur(8px)', 'blur(0px)', 'blur(0px)']
+		['blur(4px)', 'blur(0px)', 'blur(0px)']
 	);
 
 	useEffect(() => {

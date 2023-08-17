@@ -14,7 +14,12 @@ const StepCardsBlockWrapper = styled.section`
 	padding: 25vh 0;
 `;
 
-const Inner = styled.div``;
+const Inner = styled.div`
+	backface-visibility: hidden;
+	perspective: 1000;
+	transform: translate3d(0,0,0);
+	transform: translateZ(0);
+`;
 
 const StepCardsBlock = ({ data }: Props) => {
 	const {

@@ -17,10 +17,6 @@ const StepCardWrapper = styled.div`
 	height: 80vh;
 	width: 100%;
 
-	&:last-child {
-		height: auto;
-	}
-
 	@media ${(props) => props.theme.mediaBreakpoints.tabletMedium} {
 		top: 10vh;
 	}
@@ -40,7 +36,6 @@ const Title = styled.h3`
 	text-transform: uppercase;
 	width: 100%;
 	position: relative;
-	margin-bottom: 40vh;
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		margin-bottom: ${pxToRem(32)};
@@ -62,9 +57,11 @@ const ContentWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	min-height: 50vh;
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		flex-direction: column;
+		min-height: unset;
 	}
 `;
 
@@ -86,6 +83,7 @@ const Index = styled.div`
 const Content = styled.p`
 	flex: 1;
 	width: 50%;
+	align-self: center;
 
 	@media ${(props) => props.theme.mediaBreakpoints.mobile} {
 		width: 100%;
@@ -114,7 +112,7 @@ const StepCard = (props: Props) => {
 	const filter = useTransform(
 		scrollY,
 		[distanceToTop - (windowHeight / 10), distanceToTop + (windowHeight * 2)],
-		['blur(0px)', 'blur(7px)']
+		['blur(0px)', 'blur(3px)']
 	);
 
 	const width = useTransform(

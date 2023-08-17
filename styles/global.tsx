@@ -430,6 +430,11 @@ export const GlobalStyles = createGlobalStyle`
 
 	.view-element-image-blur-up
 	{
+		backface-visibility: hidden;
+		perspective: 1000;
+		transform: translate3d(0,0,0);
+		transform: translateZ(0);
+
 		img {
 			transform: scale(1.1);
 			filter: blur(3px);
