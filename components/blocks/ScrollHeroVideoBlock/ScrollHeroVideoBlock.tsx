@@ -50,12 +50,12 @@ const Canvas = styled.canvas`
 `;
 
 const ScrollHeroVideoBlock = () => {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const htmlRef = useRef<HTMLElement | null>(null);
-  const contextRef = useRef<CanvasRenderingContext2D | null>(null);
-  const imgRef = useRef<HTMLImageElement | null>(null);
+	const canvasRef = useRef<HTMLCanvasElement | null>(null);
+	const htmlRef = useRef<HTMLElement | null>(null);
+	const contextRef = useRef<CanvasRenderingContext2D | null>(null);
+	const imgRef = useRef<HTMLImageElement | null>(null);
 
-  const frameCount = 16;
+	const frameCount = 16;
 
 	const currentFrame = (index: number): string => (
 		`/sequence/${index}.jpg`
