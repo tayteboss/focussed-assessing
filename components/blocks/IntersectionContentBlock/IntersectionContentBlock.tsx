@@ -4,6 +4,7 @@ import TopIntersection from './TopIntersection';
 import BottomIntersection from './BottomIntersection';
 import { useInView } from 'react-intersection-observer';
 import MobileSwiper from './MobileSwiper';
+import { useState } from 'react';
 
 type Props = {
 	data: IntersectionType;
@@ -22,8 +23,10 @@ const IntersectionContentBlock = ({ data }: Props) => {
 		theme
 	} = data;
 
+	const [triggerAnimation, setTriggerAnimation] = useState(false);
+
 	const { ref, inView } = useInView({
-		triggerOnce: true,
+		triggerOnce: false,
 		threshold: 0.2,
 		rootMargin: '-50px'
 	});
@@ -37,17 +40,18 @@ const IntersectionContentBlock = ({ data }: Props) => {
 				primaryTitle={primaryTitle}
 				secondaryTitle={secondaryTitle}
 				topContentRichText={topContentRichText}
-				activateSwiper={inView}
+				activateSwiper={triggerAnimation}
 			/>
 			<MobileSwiper
-				activateSwiper={inView}
+				activateSwiper={triggerAnimation}
 				image={image}
 			/>
 			<BottomIntersection
 				bottomContentHeading={bottomContentHeading}
 				bottomContentRichText={bottomContentRichText}
 				image={image}
-				activateSwiper={inView}
+				activateSwiper={triggerAnimation}
+				setTriggerAnimation={setTriggerAnimation}
 			/>
 		</IntersectionContentBlockWrapper>
 	);

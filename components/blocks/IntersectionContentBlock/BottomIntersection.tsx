@@ -4,12 +4,14 @@ import LayoutGrid from '../../common/LayoutGrid';
 import pxToRem from '../../../utils/pxToRem';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 type Props = {
 	bottomContentHeading: string;
 	bottomContentRichText: string;
 	image: string;
 	activateSwiper: boolean;
+	setTriggerAnimation: (triggerAnimation: boolean) => void;
 };
 
 const BottomIntersectionWrapper = styled.div`
@@ -126,7 +128,8 @@ const BottomIntersection = (props: Props) => {
 		bottomContentHeading,
 		bottomContentRichText,
 		image,
-		activateSwiper
+		activateSwiper,
+		setTriggerAnimation
 	} = props;
 
 	const { ref, inView } = useInView({
@@ -135,8 +138,24 @@ const BottomIntersection = (props: Props) => {
 		rootMargin: '-50px'
 	});
 
+	const { ref: ref2, inView: inView2 } = useInView({
+		triggerOnce: false,
+		threshold: 0.2,
+		rootMargin: '-50px'
+	});
+
+	useEffect(() => {
+		if (inView2) {
+			setTriggerAnimation(true);
+		} else {
+			setTriggerAnimation(false);
+		}
+	}, [inView2])
+
 	return (
-		<BottomIntersectionWrapper>
+		<BottomIntersectionWrapper
+			ref={ref2}
+		>
 			<SwiperWrapper>
 				<LayoutGrid>
 					<Swiper
